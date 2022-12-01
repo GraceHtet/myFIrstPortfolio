@@ -82,7 +82,7 @@ body{
     font-size: 16px;
     line-height: 24px;
 
-    margin-top:28px;
+    margin-top:10px;
 }
 .collab-btn:hover,.collab-btn:focus{
     background-color: #fff;
@@ -98,7 +98,7 @@ body{
         background-repeat:no-repeat;
     }
     .author{
-        width:40%;
+        width:80%;
         height:100px;
     }
     .collab-btn{
@@ -109,6 +109,6 @@ body{
         background-image:url("./img/image_geometry_2.svg");
         background-repeat:no-repeat;
         background-size:100%;
-        background-position:50% 88%;
+        background-position:50% 90%;
     }
 }
