@@ -147,7 +147,7 @@ body{
 }
 .pjcontent ul{
     width:90%;
-    display:flex;
+
     margin:20px 0;
     padding:0;  
 }
@@ -189,11 +189,10 @@ body{
     color:#fff;
     text-decoration: none;
 
-    display:flex;
     justify-content: space-between;
 }
-.pjbtn img{
-    height:80%;
+.pjbtn i{
+    font-size: 20px;
     align-self: center;
 }
 /* END WORK SECTION */
@@ -203,7 +202,6 @@ body{
     padding:35px 22px ;
 
     flex-direction: column;
-    row-gap:40px;
 }
 .aboutintro{
     width:100%;
@@ -231,6 +229,8 @@ body{
     width:100%;
     background-color:var(--primary-color);
     border:0;
+
+    margin-bottom:40px;
 }
 .cvbtn a{
     color:#fff;
@@ -251,7 +251,6 @@ body{
 }
 .section-card .card-list{
     width:100%;
-    height:110vh;
     margin:0;
     padding:0;
     list-style: none;
