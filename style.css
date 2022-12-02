@@ -3,9 +3,7 @@
 :root{
     --primary-color:#1A2236;
 }
-*,
-*::after,
-*::before{
+*,*::after,*::before{
     box-sizing: border-box;
 }
 .flex{
@@ -165,7 +163,17 @@ body{
     font-size: 10.3334px;
     line-height: 80%;
     padding:7px 11px;
-    
+}
+.pjcontent ul li:nth-of-type(1){
+    flex:0.5 2 8%;
+}
+.pjcontent ul li:nth-of-type(2){
+    flex:1 0 12%;
+    padding:7px 0;
+    margin:0 10px;
+}
+.pjcontent ul li:nth-of-type(3){
+    flex:0.5 2 10%;
 }
 .pjbtn{
     width:60%;
@@ -264,7 +272,7 @@ body{
     font-size: 20px;
     line-height: 30px;
 
-    padding:65px;
+    padding:50px;
 }
 .card1{
     grid-row:1/span 1;
@@ -278,9 +286,10 @@ body{
     background-image:url("./img/ic_skills.svg"),linear-gradient(#FEBF52,#FEBF52);
 }
 .cards ul{
-    padding:8%;
+    padding:8% 0% 8% 8%;
 }
 .cards li{
+    width:100%;
     list-style: disc;
     font-family: 'Poppins';
     font-style: normal;
@@ -288,21 +297,4 @@ body{
     font-size: 18px;
     line-height: 27px;
     letter-spacing: -0.0525em;
-}
-/* END ABOUT SECTION */
-@media(min-width:320px){
-    /* START WORK SECTION */
-    
-    .pjcontent ul li:nth-of-type(1){
-        flex:0.5 0 10%;
-    }
-    .pjcontent ul li:nth-of-type(2){
-        flex:1 0 5%;
-        padding:7px 0;
-        margin:0 10px;
-    }
-    .pjcontent ul li:nth-of-type(3){
-        flex:0.5 2 10%;
-    }
-    /* END WORK SECTION */
 }
