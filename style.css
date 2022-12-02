@@ -24,6 +24,7 @@ body{
 .nav-btn{
     border:none;
     background:transparent;
+    border:0;
 
     position:absolute;
     right: 20px;
@@ -93,6 +94,8 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    
+    border:0;
 
     margin-top:10px;
 }
@@ -194,6 +197,13 @@ body{
 .pjbtn i{
     font-size: 20px;
     align-self: center;
+}
+.pjbtn:hover{
+    background-color: transparent;
+    border:0.5px solid #fff;
+}
+.pjbtn:active{
+    border: 2px solid #fff;
 }
 /* END WORK SECTION */
 /* START ABOUT SECTION */
