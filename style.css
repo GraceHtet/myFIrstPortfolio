@@ -169,6 +169,21 @@ body {
   padding: 7px 11px;
 }
 
+.cards ul {
+  padding: 8% 0% 8% 8%;
+}
+
+.cards ul li {
+  width: 100%;
+  list-style: disc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
 .pjcontent ul li:nth-of-type(1) {
   flex: 0.5 2 8%;
 }
@@ -267,6 +282,14 @@ body {
   justify-content: center;
 }
 
+.mainFooter a {
+  width: 60%;
+  text-decoration: none;
+  color: #92dcdc;
+  display: flex;
+  justify-content: space-between;
+}
+
 .collab-btn:hover,
 .collab-btn:focus,
 .cvbtn:hover,
@@ -335,21 +358,6 @@ body {
   background-color: #febf52;
 }
 
-.cards ul {
-  padding: 8% 0% 8% 8%;
-}
-
-.cards li {
-  width: 100%;
-  list-style: disc;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  letter-spacing: -0.0525em;
-}
-
 /* END ABOUT SECTION */
 
 /* START CONTACT ME SECTION */
@@ -398,14 +406,9 @@ input {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding: 23px 0px 8px 16px;
+  padding: 23px 0 8px 16px;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
-}
-
-input:focus,
-textarea:focus {
-  border: 1px solid #1a2236;
 }
 
 label {
@@ -432,6 +435,11 @@ textarea {
   padding: 15px 16px;
 }
 
+input:focus,
+textarea:focus {
+  border: 1px solid #1a2236;
+}
+
 .contact-btn {
   height: 44px;
   margin-top: 15px;
@@ -441,14 +449,6 @@ textarea {
   width: 100%;
   background: var(--primary-color);
   padding: 10% 5% 5% 5%;
-}
-
-.mainFooter a {
-  width: 60%;
-  text-decoration: none;
-  color: #92dcdc;
-  display: flex;
-  justify-content: space-between;
 }
 
 .resume {
