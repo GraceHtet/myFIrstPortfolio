@@ -321,3 +321,26 @@ body {
 .fa {
   color: #505f79;
 }
+
+.container {
+  width: 100%;
+  height: 600px;
+  padding: 10%;
+}
+
+.contactMe {
+  width: 100%;
+  height: auto;
+  background-color: #f9f9fa;
+}
+
+.contact {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  margin-bottom: 20px;
+}
