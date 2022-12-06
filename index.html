@@ -243,7 +243,7 @@
       </div>
     </section>
     <!-- End ABOUT SECTION -->
-    <!-- Start CONTACT ME FORM -->
+    <!-- Start CONTACT ME SECTION -->
     <section class="contactMe">
       <div class="container">
         <!-- start title -->
@@ -251,71 +251,36 @@
           <h2>Get started</h2>
         </div>
         <!-- end title -->
-        <p class="contact">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          harum cum dolores suscipit provident inventore? Aliquid, error.
-          Aspernatur, facere, aliquid quos ea eligendi accusantium nulla,
-          doloribus quaerat asperiores eaque animi!
-        </p>
-        <form>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-            maxlength="30"
-            minlength="2"
-            title="Your name"
-            value="Anastasia"
-          />
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-            title="Your email"
-          />
-          <br />
-          <textarea
-            maxlength="500"
-            minlength="2"
-            placeholder="Enter your message here..."
-            required
-          ></textarea>
-          <button class="btn">Start collaboration</button>
+        <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <form  action="https://formspree.io/f/mjvznwlg" method="POST">
+          <div class="form-input">
+            <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="30" minlength="2"  required/>
+            <label>Your name</label>
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+            <label>Your email</label>
+          </div>
+          <textarea rows="4" placeholder="Enter your message here..." maxlength="500" minlength="2" required></textarea>
+          <button type="submit" class="collab-btn contact-btn">Start collaboration</button>
         </form>
       </div>
     </section>
     <footer class="mainFooter">
-      <a href="#" target="_blank">Get my Resume</a>
+      <a href="#" target="_blank" class="resume"><span>Get my Resume </span><img src="./img/ic_link_teal.svg" alt="teal"/></a>
     <div class="my_links">
-      <ul class="media_links">
-        <li>
-          <a href="https://www.linkedin.com/in/tamara-dimov-b85139a2/">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/TamaraDimov">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/DimovTamara">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
+      <ul>
+        <li><a href="#" target="_blank"><img src="./img/ic_stackoverflow.svg" alt="stackoverflow"/></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ic_github.svg" alt="github"/></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ic_twitter.svg" alt="twitter"/></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ic_linkedin.svg" alt="linkedin"/></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ic_medium.svg" alt="medium"/></a></li>
+        <li><a href="#" target="_blank"><img src="./img/ic_angellist.svg" alt="angelist"/></a></li>
       </ul>
     </div>
     </footer>
+
+    <!-- End CONTACT ME SECTION -->
   
   </body>
 </html>
