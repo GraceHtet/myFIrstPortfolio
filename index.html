@@ -19,6 +19,12 @@
     <header>
       <nav>
         <div class="navbar flex">
+          <ul class="nav-menu">
+            <li class="nav-items active-nav"><a href="#home" class="nav-links" target="_blank">Hello</a></li>
+            <li class="nav-items"><a href="#portfolio" class="nav-links" target="_blank">Portfolio</a></li>
+            <li class="nav-items"><a href="#about" class="nav-links" target="_blank">About</a></li>
+            <li class="nav-items"><a href="#contact" class="nav-links" target="_blank">Contact</a></li>
+          </ul>
           <button type="button" class="nav-btn">
             <div class="lines line1"></div>
             <div class="lines line2"></div>
@@ -30,7 +36,7 @@
     <!-- End NAVBAR SECTION-->
 
     <!-- Start HEADLINE SECTION-->
-    <section class="headline flex">
+    <section id="home" class="headline flex">
       <div class="content flex">
         <h1 class="author">Thiri Htet Htet Aung</h1>
         <p class="intro">
@@ -40,11 +46,12 @@
         </p>
         <button type="button" class="collab-btn">Start collaboration</button>
       </div>
+      <div class="imgbox"></div>
     </section>
     <!-- End HEADLINE SECTION -->
 
     <!-- Start WORK SECTION -->
-    <section class="works">
+    <section id="portfolio" class="works">
       <!-- start title -->
       <div class="title">
         <h2>Projects</h2>
@@ -52,7 +59,6 @@
       <!-- end title -->
 
       <!-- start project card -->
-      <div class="projects">
         <!-- start card1 -->
         <div class="project-cards project1 flex">
           <div class="pjimgs">
@@ -63,7 +69,7 @@
             <ul class="flex">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>Javasccript</li>
+              <li>Javascript</li>
             </ul>
             <button type="button" class="pjbtn">
               <a href="#" class="flex"
@@ -74,48 +80,50 @@
           </div>
         </div>
         <!-- end card1 -->
-        <!-- start card2 -->
-        <div class="project-cards project2 flex">
-          <div class="pjimgs">
-            <img src="./img/pj2.svg" alt="pj2" />
+        <div class="proj23">
+          <!-- start card2 -->
+          <div class="project-cards project2 flex">
+            <div class="pjimgs">
+              <img src="./img/pj2.svg" alt="pj2" />
+            </div>
+            <div class="pjcontent">
+              <h3 class="pjname">Project name goes here</h3>
+              <ul class="flex">
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                <li>Javascript</li>
+              </ul>
+              <button type="button" class="pjbtn">
+                <a href="#" class="flex"
+                  ><span>See this Project</span
+                  ><i class="bx bx-right-arrow-alt"></i
+                ></a>
+              </button>
+            </div>
           </div>
-          <div class="pjcontent">
-            <h3 class="pjname">Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>Javasccript</li>
-            </ul>
-            <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i
-              ></a>
-            </button>
+          <!-- end card2 -->
+          <!-- start card3 -->
+          <div class="project-cards project3 flex">
+            <div class="pjimgs">
+              <img src="./img/pj3.svg" alt="pj3" />
+            </div>
+            <div class="pjcontent">
+              <h3 class="pjname">Project name goes here</h3>
+              <ul class="flex">
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                <li>Javascript</li>
+              </ul>
+              <button type="button" class="pjbtn">
+                <a href="#" class="flex"
+                  ><span>See this Project</span
+                  ><i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </button>
+            </div>
           </div>
+          <!-- end card3 -->
         </div>
-        <!-- end card2 -->
-        <!-- start card3 -->
-        <div class="project-cards project3 flex">
-          <div class="pjimgs">
-            <img src="./img/pj3.svg" alt="pj3" />
-          </div>
-          <div class="pjcontent">
-            <h3 class="pjname">Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>Javasccript</li>
-            </ul>
-            <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-        <!-- end card3 -->
         <!-- start card4 -->
         <div class="project-cards project4 flex">
           <div class="pjimgs">
@@ -126,7 +134,7 @@
             <ul class="flex">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>Javasccript</li>
+              <li>Javascript</li>
             </ul>
             <button type="button" class="pjbtn">
               <a href="#" class="flex"
@@ -137,55 +145,56 @@
           </div>
         </div>
         <!-- end card4 -->
-        <!-- start card5 -->
-        <div class="project-cards project5 flex">
-          <div class="pjimgs">
-            <img src="./img/pj5.svg" alt="pj5" />
+        <div class="proj56">
+          <!-- start card5 -->
+          <div class="project-cards project5 flex">
+            <div class="pjimgs">
+              <img src="./img/pj5.svg" alt="pj5" />
+            </div>
+            <div class="pjcontent">
+              <h3 class="pjname">Project name goes here</h3>
+              <ul class="flex">
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                <li>Javascript</li>
+              </ul>
+              <button type="button" class="pjbtn">
+                <a href="#" class="flex"
+                  ><span>See this Project</span
+                  ><i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </button>
+            </div>
           </div>
-          <div class="pjcontent">
-            <h3 class="pjname">Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>Javasccript</li>
-            </ul>
-            <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </button>
+          <!-- end card5 -->
+          <!-- start card6 -->
+          <div class="project-cards project6 flex">
+            <div class="pjimgs">
+              <img src="./img/pj6.svg" alt="pj6" />
+            </div>
+            <div class="pjcontent">
+              <h3 class="pjname">Project name goes<span class="here"> here</span><span class="dots">...</span></h3>
+              <ul class="flex">
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                <li><span>Javascript</span><span>+1</span></li>
+              </ul>
+              <button type="button" class="pjbtn">
+                <a href="#" class="flex"
+                  ><span>See this Project</span
+                  ><i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </button>
+            </div>
           </div>
+          <!-- end card6 -->
         </div>
-        <!-- end card5 -->
-        <!-- start card6 -->
-        <div class="project-cards project6 flex">
-          <div class="pjimgs">
-            <img src="./img/pj6.svg" alt="pj6" />
-          </div>
-          <div class="pjcontent">
-            <h3 class="pjname">Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>Javasccript</li>
-            </ul>
-            <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-        <!-- end card6 -->
-      </div>
       <!-- end project card -->
     </section>
     <!-- End WORK SECTION -->
 
     <!-- Start ABOUT SECTION -->
-    <section class="about flex">
+    <section id="about" class="about flex">
       <div class="aboutintro">
         <!-- start title -->
         <div class="title">
@@ -244,38 +253,44 @@
     </section>
     <!-- End ABOUT SECTION -->
     <!-- Start CONTACT ME SECTION -->
-    <section class="contactMe">
+    <section id="contact" class="contactMe">
       <div class="container">
         <!-- start title -->
         <div class="title">
           <h2>Get started</h2>
         </div>
         <!-- end title -->
-        <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <p class="contact">LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
         <form  action="https://formspree.io/f/mjvznwlg" method="POST">
-          <div class="form-input">
-            <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="30" minlength="2"  required/>
-            <label>Your name</label>
+          <div class="input-box">
+            <div class="form-input">
+              <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="30" minlength="2"  required/>
+              <label>Your name</label>
+            </div>
+            <div class="form-input">
+              <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+              <label>Your email</label>
+            </div>
           </div>
-          <div class="form-input">
-            <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-            <label>Your email</label>
+          <div class="text-box">
+            <textarea rows="4" placeholder="Enter your message here..." maxlength="500" minlength="2" required></textarea>
+            <label class="tlabel">Message</label>
           </div>
-          <textarea rows="4" placeholder="Enter your message here..." maxlength="500" minlength="2" required></textarea>
           <button type="submit" class="collab-btn contact-btn">Start collaboration</button>
         </form>
       </div>
     </section>
     <footer class="mainFooter">
-      <a href="#" target="_blank" class="resume"><span>Get my Resume </span><img src="./img/ic_link_teal.svg" alt="teal"/></a>
+      <a href="#" target="_blank" class="resume"><span class="get-rs">Get my Resume </span><img src="./img/ic_link_teal.svg" alt="teal" class="get-rs"/><span class="get-cv">Get My CV</span><img src="./img/ic-link_teal@2x.svg" class="get-cv" alt="icon"
+        /></a>
     <div class="my_links">
       <ul>
-        <li><a href="#" target="_blank"><img src="./img/ic_stackoverflow.svg" alt="stackoverflow"/></a></li>
-        <li><a href="#" target="_blank"><img src="./img/ic_github.svg" alt="github"/></a></li>
-        <li><a href="#" target="_blank"><img src="./img/ic_twitter.svg" alt="twitter"/></a></li>
-        <li><a href="#" target="_blank"><img src="./img/ic_linkedin.svg" alt="linkedin"/></a></li>
-        <li><a href="#" target="_blank"><img src="./img/ic_medium.svg" alt="medium"/></a></li>
-        <li><a href="#" target="_blank"><img src="./img/ic_angellist.svg" alt="angelist"/></a></li>
+        <li><a href="https://stackoverflow.com/users/20728647/grace" target="_blank" rel="noopener noreferrer"><img src="./img/ic_stackoverflow.svg" alt="stackoverflow"/></a></li>
+        <li><a href="https://github.com/GraceHtet" target="_blank" rel="noopener noreferrer"><img src="./img/ic_github.svg" alt="github"/></a></li>
+        <li><a href="https://twitter.com/Grace_Htet4?s=09" target="_blank" rel="noopener noreferrer"><img src="./img/ic_twitter.svg" alt="twitter"/></a></li>
+        <li><a href="https://www.linkedin.com/in/thiri-htet-418047204/" target="_blank" rel="noopener noreferrer"><img src="./img/ic_linkedin.svg" alt="linkedin"/></a></li>
+        <li><a href="https://medium.com/" target="_blank" rel="noopener noreferrer"><img src="./img/ic_medium.svg" alt="medium"/></a></li>
+        <li><a href="https://angel.co/" target="_blank" rel="noopener noreferrer"><img src="./img/ic_angellist.svg" alt="angelist"/></a></li>
       </ul>
     </div>
     </footer>
