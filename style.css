@@ -3,6 +3,8 @@
 
 :root {
   --primary-color: #1a2236;
+  --heading-font: "Playfair Display", serif;
+  --main-font: "Poppins", sans-serif;
 }
 
 *,
@@ -16,6 +18,8 @@
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -24,8 +28,43 @@ body {
 .navbar {
   width: 100%;
   height: 12vh;
-  background-image: url("./img/image_geometry_1.svg");
+  background-image: url("./img/mobile_navbg.svg");
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 25%;
+  list-style: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(11px + (16 - 11) * (100vw - 768px) / (1440 - 768));
+  line-height: 24px;
+  display: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav-items a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.active-nav {
+  position: relative;
+}
+
+.active-nav::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .nav-btn {
@@ -34,7 +73,7 @@ body {
   position: absolute;
   right: 20px;
   top: 19px;
-  flex: 10 5 20%;
+  justify-self: flex-end;
 }
 
 .nav-btn .lines {
@@ -53,11 +92,10 @@ body {
 .headline {
   width: 100%;
   height: 68vh;
-  background-image: url("./img/image_geometry_2.svg");
+  background-image: url("./img/mobile_headerbg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  flex-direction: column;
 }
 
 .content {
@@ -71,7 +109,7 @@ body {
 .author {
   width: 80%;
   color: var(--primary-color);
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -81,7 +119,7 @@ body {
 
 .intro {
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -96,7 +134,7 @@ body {
   height: 7vh;
   background-color: var(--primary-color);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -114,7 +152,7 @@ body {
 
 .title h2 {
   color: var(--primary-color);
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -141,13 +179,17 @@ body {
 }
 
 .pjname {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
   margin: 0;
   padding: 0;
+}
+
+.pjname .dots {
+  display: none;
 }
 
 .pjcontent ul {
@@ -161,7 +203,7 @@ body {
   color: var(--primary-color);
   list-style-type: none;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 10.3334px;
@@ -176,7 +218,7 @@ body {
 .cards ul li {
   width: 100%;
   list-style: disc;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -198,11 +240,15 @@ body {
   flex: 0.5 2 10%;
 }
 
+.project6 ul li:nth-of-type(3) span:last-of-type {
+  display: none;
+}
+
 .pjbtn {
   width: 60%;
   background: var(--primary-color);
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-weight: 300;
   border: 1px solid #fff;
   backdrop-filter: blur(0.5px);
@@ -252,7 +298,7 @@ body {
 
 .bio {
   color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -274,20 +320,12 @@ body {
 .cvbtn a {
   color: #fff;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 3;
   justify-content: center;
-}
-
-.mainFooter a {
-  width: 60%;
-  text-decoration: none;
-  color: #92dcdc;
-  display: flex;
-  justify-content: space-between;
 }
 
 .collab-btn:hover,
@@ -329,12 +367,14 @@ body {
 }
 
 .cards {
+  width: 289px;
+  height: 289px;
   color: #fff;
   background-image: url("./img/ic_languages_mob.svg");
   background-color: #1c528a;
   background-repeat: no-repeat;
   background-position: right bottom;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -364,7 +404,7 @@ body {
 .contactMe {
   width: 100%;
   padding: 20% 5% 10% 6%;
-  background-image: url("./img/image_geometry_1.svg");
+  background-image: url("./img/mobile_navbg.svg");
   background-color: #f9f9fa;
   background-repeat: no-repeat;
   display: flex;
@@ -381,7 +421,7 @@ body {
 }
 
 .contact {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -401,7 +441,7 @@ body {
 
 input {
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -412,7 +452,7 @@ input {
 }
 
 label {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -423,9 +463,13 @@ label {
   top: 4px;
 }
 
+.tlabel {
+  display: none;
+}
+
 textarea {
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -433,6 +477,7 @@ textarea {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   padding: 15px 16px;
+  resize: none;
 }
 
 input:focus,
@@ -452,11 +497,20 @@ textarea:focus {
 }
 
 .resume {
-  font-family: "Poppins", sans-serif;
+  width: 60%;
+  color: #92dcdc;
+  text-decoration: none;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-cv {
+  display: none;
 }
 
 .my_links ul {
@@ -468,4 +522,369 @@ textarea:focus {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 12vh;
+    background-image: none;
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .headline {
+    height: 100vh;
+    background-image: none;
+    align-items: flex-start;
+  }
+
+  .content {
+    width: 52%;
+    height: 100vh;
+    background-image: url("./img/image_dots_home.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin: 0;
+    padding-top: 11.11%;
+    padding-left: 10%;
+    padding-right: 6.5%;
+    justify-content: flex-start;
+  }
+
+  .author,
+  .title h2 {
+    width: 100%;
+    font-size: calc(50px + (110 - 50) * (100vw - 320px) / (1440 - 320));
+  }
+
+  .intro {
+    margin: 10% 0;
+  }
+
+  .collab-btn {
+    width: 51%;
+    height: 7.9vh;
+    font-size: 18px;
+  }
+
+  .imgbox {
+    width: 48%;
+    height: 100vh;
+    background-image: url("./img/main_headlinebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .works {
+    background-image:
+      url("./img/image-geometry_2.svg"),
+      url("./img/image-geometry_3.svg"),
+      url("./img/image-geometry_5.svg"),
+      url("./img/image-geometry_4.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 63vh, 100% 123vh, left bottom, 52% 153vh;
+    display: grid;
+    grid-template-areas:
+      "tt pj1 pj1"
+      "pj23 pj23 pj56"
+      "bg pj4 pj4";
+  }
+
+  .works .title {
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/image_dots_pj.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    grid-area: tt;
+  }
+
+  .works .title h2 {
+    padding-top: 20%;
+    transform: rotate(270deg);
+    transform-origin: bottom;
+  }
+
+  .project-cards {
+    background-color: transparent;
+  }
+
+  .project1 {
+    grid-area: pj1;
+    position: relative;
+  }
+
+  .proj23 {
+    width: 55vw;
+    height: 90vh;
+    grid-area: pj23;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .project2 {
+    width: 60%;
+    height: 30vh;
+  }
+
+  .project3 {
+    width: 100%;
+    height: 52vh;
+  }
+
+  .project4 {
+    height: 31vh;
+    grid-area: pj4;
+    padding-left: 13%;
+  }
+
+  .project4 .pjimgs {
+    height: 100%;
+  }
+
+  .proj56 {
+    width: 32.3vw;
+    height: 63vh;
+    grid-area: pj56;
+    display: grid;
+    grid-template: 50% 50% / 100%;
+    justify-self: end;
+  }
+
+  .project5 {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+
+  .project6 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    position: relative;
+  }
+
+  .project1 .pjcontent {
+    width: 100%;
+    height: 64%;
+    padding: 7%;
+    opacity: 0.98;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .project1 .pjname {
+    font-weight: 700;
+    font-size: calc(33px + (60 - 33) * (100vw - 768px) / (1440 - 768));
+    line-height: 80%;
+  }
+
+  .project6 .pjcontent {
+    width: 100%;
+    height: 80%;
+    padding: 6%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .project6 .pjname {
+    font-weight: 700;
+    font-size: calc(20px + (40 - 20) * (100vw - 768px) / (1440 - 768));
+    line-height: 80%;
+  }
+
+  .pjname .here {
+    display: none;
+  }
+
+  .pjname .dots {
+    display: inline;
+  }
+
+  .project1 ul {
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 8%;
+  }
+
+  .project6 ul {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .project6 ul li {
+    padding: 2.5% 20px;
+  }
+
+  .project1 ul li,
+  .project6 ul li {
+    font-weight: 300;
+    font-size: calc(10.3334px + (20 - 10.334) * (100vw - 768px) / (1440 - 768));
+    line-height: 80%;
+    padding: 2% 4%;
+  }
+
+  .project1 ul li:nth-of-type(2) {
+    line-height: 1.2;
+    margin: 0 4%;
+  }
+
+  .project6 ul li:nth-of-type(3) {
+    padding: 2.5% 0;
+  }
+
+  .project6 ul li:nth-of-type(3) span:first-of-type {
+    display: none;
+  }
+
+  .project6 ul li:nth-of-type(3) span:last-of-type {
+    padding: 2.5% 20px;
+    display: inline;
+  }
+
+  .pjbtn {
+    width: 20vw;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: calc(12px + (18 - 12) * (100vw - 768px) / (1440 - 768));
+    line-height: 27px;
+    padding: 1.5% 2%;
+  }
+
+  .project6 .pjbtn {
+    width: 50%;
+  }
+
+  .pjbtn a {
+    color: var(--primary-color);
+  }
+
+  .pjbtn i {
+    font-size: 30px;
+  }
+
+  .pjbtn:hover a {
+    color: #fff;
+  }
+
+  .project2 .pjcontent,
+  .project3 .pjcontent,
+  .project4 .pjcontent,
+  .project5 .pjcontent {
+    display: none;
+  }
+
+  .about {
+    width: 100%;
+    display: grid;
+    grid-template: 100% / 52% 48%;
+    padding: 11.11% 11.11% 10% 10%;
+  }
+
+  .aboutintro {
+    grid-area: 1/ 2 / span 1 / span 1;
+    padding: 10% 0 0 22%;
+  }
+
+  .section-card {
+    background-image: url("./img/image_dots_home.svg"), url("./img/Shape.svg");
+    background-repeat: no-repeat;
+    background-position: 84% bottom, right 66%;
+    grid-area: 1 / 1 / span 1 / span 1;
+    padding: 0;
+  }
+
+  .section-card .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 0;
+  }
+
+  .cvbtn {
+    width: 50%;
+  }
+
+  .contactMe {
+    background-image:
+      url("./img/main_contactbg1.svg"),
+      url("./img/main_contactbg2.svg");
+    background-position: left top, right bottom;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10% 0 8% 0;
+  }
+
+  .container {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-input {
+    width: 48%;
+  }
+
+  .text-box {
+    margin-top: 5%;
+    position: relative;
+  }
+
+  input,
+  textarea {
+    font-size: calc(12px + (16 - 12) * (100vw - 768px) / (1440 - 768));
+    padding: 18px 20px;
+  }
+
+  label {
+    font-size: 12px;
+    left: 0;
+    top: -40%;
+  }
+
+  .tlabel {
+    display: block;
+    top: -15%;
+  }
+
+  .contact-btn {
+    width: 40%;
+    height: 7vh;
+    margin: 6% 30%;
+  }
+
+  .mainFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 10vw;
+  }
+
+  .resume {
+    width: 8vw;
+  }
+
+  .get-rs {
+    display: none;
+  }
+
+  .get-cv {
+    display: inline;
+  }
+
+  .my_links {
+    width: 20vw;
+  }
 }
