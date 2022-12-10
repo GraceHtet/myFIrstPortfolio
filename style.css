@@ -608,10 +608,8 @@ textarea:focus {
   }
 
   .works {
-    background-image:
-      url("./img/image-geometry_2.svg"),
-      url("./img/image-geometry_3.svg"),
-      url("./img/image-geometry_5.svg"),
+    background-image: url("./img/image-geometry_2.svg"),
+      url("./img/image-geometry_3.svg"), url("./img/image-geometry_5.svg"),
       url("./img/image-geometry_4.svg");
     background-repeat: no-repeat;
     background-position: 50% 63vh, 100% 123vh, left bottom, 52% 153vh;
@@ -841,8 +839,7 @@ textarea:focus {
   }
 
   .contactMe {
-    background-image:
-      url("./img/main_contactbg1.svg"),
+    background-image: url("./img/main_contactbg1.svg"),
       url("./img/main_contactbg2.svg");
     background-position: left top, right bottom;
     justify-content: center;
@@ -902,6 +899,11 @@ textarea:focus {
 
   .resume {
     width: 8vw;
+    transition: all 0.5s;
+  }
+
+  .resume:hover {
+    font-size: 18px;
   }
 
   .get-rs {
@@ -916,7 +918,6 @@ textarea:focus {
     width: 20vw;
   }
 }
-
 @keyframes leftani {
   from {
     transform: translateX(-10%);
