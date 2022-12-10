@@ -917,6 +917,13 @@ textarea:focus {
   .my_links {
     width: 20vw;
   }
+.f-links {
+    transition: all 2s;
+  }
+  .f-links:hover img {
+    width: 110%;
+  }
+
 }
 @keyframes leftani {
   from {
