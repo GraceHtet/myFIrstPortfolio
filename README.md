@@ -189,16 +189,18 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Grace Htet**
 
 - GitHub: [@githubhandle](https://github.com/GraceHtet)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/thiri-htet-418047204/)
 
-👤 **Author2**
+👤 **Fauziyah**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/fauziyahzeeyah)
+
+👤 **Tamara Dimov**
+
+- GitHub: [@githubhandle](https://github.com/TamaraDimov)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -237,7 +239,7 @@ If you like this project, please don't forget to follow me and give me advice so
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse, and my coding partners.
+I would like to thank Microverse, and my coding partners(Fauziyah, Tamara).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
