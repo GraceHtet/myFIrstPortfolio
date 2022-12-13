@@ -265,16 +265,16 @@
           <div class="input-box">
             <div class="form-input">
               <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="30" minlength="2"  required/>
-              <label>Your name</label>
+              <label for="name">Your name</label>
             </div>
             <div class="form-input">
               <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-              <label>Your email</label>
+              <label for="email">Your email</label>
             </div>
           </div>
           <div class="text-box">
-            <textarea rows="4" placeholder="Enter your message here..." maxlength="500" minlength="2" required></textarea>
-            <label class="tlabel">Message</label>
+            <textarea id="text" rows="4" placeholder="Enter your message here..." maxlength="500" minlength="2" required></textarea>
+            <label for="text" class="tlabel">Message</label>
           </div>
           <button type="submit" class="collab-btn contact-btn">Start collaboration</button>
         </form>
