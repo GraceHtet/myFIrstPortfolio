@@ -105,7 +105,6 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> (https://gracehtet.github.io/myFIrstPortfolio/)
 - [Live Demo Link](https://gracehtet.github.io/myFIrstPortfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
