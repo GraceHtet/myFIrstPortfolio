@@ -87,6 +87,22 @@ body {
   margin: 4px 0;
 }
 
+.nav-btn .line2 {
+  margin: 4px 0;
+}
+
+.navbar.active .line1 {
+  transform: rotate(45deg) translate(4px, 6px);
+}
+
+.navbar.active .line2 {
+  opacity: 0;
+}
+
+.navbar.active .line3 {
+  transform: rotate(45deg) translate(4px, -6px);
+}
+
 /* END NAVBAR SECTION */
 
 /* START HEADLINE SECTION */
@@ -651,8 +667,7 @@ textarea:focus {
   }
 
   .work-bgs3 {
-    background-image:
-      url("./img/image-geometry_4.svg"),
+    background-image: url("./img/image-geometry_4.svg"),
       url("./img/image-geometry_5.svg");
     background-repeat: no-repeat;
     background-position: top right, top left;
@@ -834,8 +849,7 @@ textarea:focus {
   }
 
   .contactMe {
-    background-image:
-      url("./img/main_contactbg1.svg"),
+    background-image: url("./img/main_contactbg1.svg"),
       url("./img/main_contactbg2.svg");
     background-position: left top, right bottom;
     justify-content: center;
