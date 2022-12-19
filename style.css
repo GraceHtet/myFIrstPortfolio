@@ -204,15 +204,6 @@ body {
   animation: 1s linear 1s 1 backwards leftani;
 }
 
-.imgbox {
-  width: 100%;
-  height: 45vh;
-  background-image: url("./img/mobile_headerbg.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
 /* END HEADLINE SECTION */
 
 /* START WORK SECTION */
@@ -991,7 +982,7 @@ textarea:focus {
   }
 
   .f-links {
-    transition: all 0.5s;
+    transition: all 2s;
   }
 
   .f-links:hover img {
