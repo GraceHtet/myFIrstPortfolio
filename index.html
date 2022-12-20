@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
     <title>Thiri's Portfolio</title>
-    <!-- box icons css1 -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- font-awesome css1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- Start NAVBAR SECTION-->
     <header>
       <nav>
-        <div class="navbar flex">
+        <div id="navBar" class="navbar flex">
           <ul class="nav-menu">
-            <li class="nav-items active-nav"><a href="#home" class="nav-links" target="_blank">Hello</a></li>
-            <li class="nav-items"><a href="#portfolio" class="nav-links" target="_blank">Portfolio</a></li>
-            <li class="nav-items"><a href="#about" class="nav-links" target="_blank">About</a></li>
-            <li class="nav-items"><a href="#contact" class="nav-links" target="_blank">Contact</a></li>
+            <li class="nav-items active-nav"><a href="#home" class="nav-links" target="_self">Hello</a></li>
+            <li class="nav-items"><a href="#portfolio" class="nav-links" target="_self">Portfolio</a></li>
+            <li class="nav-items"><a href="#about" class="nav-links" target="_self">About</a></li>
+            <li class="nav-items"><a href="#contact" class="nav-links" target="_self">Contact</a></li>
           </ul>
-          <button type="button" class="nav-btn">
+          <button type="button" id="navBtn" class="nav-btn">
             <span class="lines line1"></span>
             <span class="lines line2"></span>
             <span class="lines line3"></span>
@@ -73,7 +67,7 @@
           <button type="button" class="pjbtn">
             <a href="#" class="flex"
               ><span>See this Project</span
-              ><i class="bx bx-right-arrow-alt"></i>
+              ><i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -95,8 +89,7 @@
           <button type="button" class="pjbtn">
             <a href="#" class="flex"
               ><span>See this Project</span
-              ><i class="bx bx-right-arrow-alt"></i
-            ></a>
+              ><i class="fa-solid fa-arrow-right"></i></a>
           </button>
         </div>
       </div>
@@ -117,7 +110,7 @@
           <button type="button" class="pjbtn">
             <a href="#" class="flex"
               ><span>See this Project</span
-              ><i class="bx bx-right-arrow-alt"></i>
+              ><i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -140,7 +133,7 @@
           <button type="button" class="pjbtn">
             <a href="#" class="flex"
               ><span>See this Project</span
-              ><i class="bx bx-right-arrow-alt"></i>
+              ><i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -162,7 +155,7 @@
             <button type="button" class="pjbtn">
               <a href="#" class="flex"
                 ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i>
+                ><i class="fa-solid fa-arrow-right"></i>
               </a>
             </button>
           </div>
@@ -183,7 +176,7 @@
             <button type="button" class="pjbtn">
               <a href="#" class="flex"
                 ><span>See this Project</span
-                ><i class="bx bx-right-arrow-alt"></i>
+                ><i class="fa-solid fa-arrow-right"></i>
               </a>
             </button>
           </div>
@@ -281,7 +274,7 @@
       </div>
     </section>
     <footer class="mainFooter">
-      <a href="#" target="_blank" class="resume"><span class="get-rs">Get my Resume </span><img src="./img/ic_link_teal.svg" alt="teal" class="get-rs"/><span class="get-cv">Get My CV</span><img src="./img/ic-link_teal@2x.svg" class="get-cv" alt="icon"
+      <a href="#" target="_self" class="resume"><span class="get-rs">Get my Resume </span><img src="./img/ic_link_teal.svg" alt="teal" class="get-rs"/><span class="get-cv">Get My CV</span><img src="./img/ic-link_teal@2x.svg" class="get-cv" alt="icon"
         /></a>
     <div class="my_links">
       <ul>
@@ -297,5 +290,6 @@
 
     <!-- End CONTACT ME SECTION -->
   
+  <script src="./app.js" type="text/javascript"></script> 
   </body>
 </html>

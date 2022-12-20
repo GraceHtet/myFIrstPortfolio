@@ -52,12 +52,12 @@ After you're finished please remove all the comments and instructions!
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [My-First-Portfolio] <a name="portfolio-project"></a>
 
-> This is my first portfolio creating after joining microverse
+> This is my first portfolio creating after joining microverse.
+> [Project Intro Video](https://www.loom.com/share/85697e0176084ec8a7b28487380fb1d7)
 
 **[My-First-Portfolio]** is a...
 
@@ -66,6 +66,7 @@ After you're finished please remove all the comments and instructions!
 ### Tech Stack <a name="tech-stack"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
+
 <details>
   <summary>Client</summary>
   <ul>
@@ -92,12 +93,12 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
+
 - **[key_feature_1]**
 - **[key_feature_2]**
 - **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,12 +131,11 @@ Example command:
 
 Clone this repository to your desired folder:
 
-
-
 ```sh
   cd my-folder
   git clone git@github.com:GraceHtet/myFIrstPortfolio.git
 ```
+
 -
 
 ### Install
@@ -201,6 +201,10 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/TamaraDimov)
 
+👤 **Ezekiel Udiomuno**
+
+- GitHub: [@githubhandle](https://github.com/Ezzywealth)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ezekiel-udiomuno-b14539150?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM6dNTDZrR%2FSWhJBz5jn3Ag%3D%3D)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,6 +213,7 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
+
 - [ ] **[new_feature_1]**
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
@@ -229,7 +234,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project, please don't forget to follow me and give me advice so that I can improve more.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -247,6 +251,7 @@ I would like to thank Microverse, and my coding partners(Fauziyah, Tamara).
 ## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
+
 - **[Question_1]**
 
   - [Answer_1]
