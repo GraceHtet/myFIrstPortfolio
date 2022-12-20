@@ -135,7 +135,7 @@ body.nav-active {
   background-position: top left, bottom right;
   background-size: 80%, 100%;
   text-align: center;
-  position: fixed;
+  position: absolute;
   z-index: 3;
 }
 
@@ -209,6 +209,15 @@ body.nav-active {
   animation: 1s linear 1s 1 backwards leftani;
 }
 
+.imgbox {
+  width: 100%;
+  height: 45vh;
+  background-image: url("./img/mobile_headerbg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 /* END HEADLINE SECTION */
 
 /* START WORK SECTION */
@@ -258,23 +267,20 @@ body.nav-active {
   display: none;
 }
 
-.pjcontent ul {
-  width: 90%;
-  margin: 20px 0;
+.img-lists {
+  width: 100%;
+  height: 7vh;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
-.pjcontent ul li {
-  background-color: #98dede;
-  color: var(--primary-color);
-  list-style-type: none;
-  text-align: center;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(10.3334px + (20 - 10.334) * (100vw - 320px) / (1440 - 320));
-  line-height: 80%;
-  padding: 7px 11px;
+.img-lists li {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 25%;
 }
 
 .cards ul {
@@ -290,6 +296,41 @@ body.nav-active {
   font-size: 18px;
   line-height: 27px;
   letter-spacing: -0.0525em;
+}
+
+.pjcontent ul,
+.lg-lists {
+  width: 90%;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.pjcontent ul li,
+.modal-box .lg-lists li {
+  background-color: #98dede;
+  color: var(--primary-color);
+  list-style-type: none;
+  text-align: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10.3334px + (20 - 10.334) * (100vw - 320px) / (1440 - 320));
+  line-height: 80%;
+  padding: 7px 11px;
+}
+
+.modal-box .lg-lists {
+  width: auto;
+}
+
+.modal-box .lg-lists li {
+  background-color: #fff;
+  border: 1px solid #1a2236;
+  padding: 1.5vw 2vw;
+}
+
+.lg-lists li:nth-of-type(2) {
+  margin: 0 3%;
 }
 
 .pjcontent ul li:nth-of-type(1) {
@@ -328,7 +369,7 @@ body.nav-active {
 }
 
 .pjbtn i {
-  font-size: 20px;
+  font-size: 16px;
   align-self: center;
 }
 
@@ -583,7 +624,7 @@ textarea:focus {
 .my_links ul {
   width: 100%;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0;
   margin-bottom: 8%;
   list-style: none;
@@ -591,7 +632,134 @@ textarea:focus {
   justify-content: space-between;
 }
 
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-box {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 6.25vw;
+  margin: 0;
+  position: relative;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.55rem;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  cursor: pointer;
+}
+
+.modal-box .pjname {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: calc(20px + (60 - 20) * (100vw - 320px) / (1440 - 320));
+  line-height: 80%;
+}
+
+.main-img {
+  width: 100%;
+  height: 28vh;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-img .fa-solid {
+  color: #fff;
+  font-size: calc(20px + (50 - 20) * (100vw - 320px) / (1440 - 320));
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-solid.right {
+  right: 0;
+}
+
+.pj-info {
+  width: 100%;
+}
+
+.modal-content {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.modal-btn-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-btn {
+  width: 246px;
+  height: 51px;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  border: 1px solid var(--primary-color);
+  padding-left: 5%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-btn:last-child {
+  margin-bottom: 0;
+}
+
+.modal-btn:hover {
+  background: var(--primary-color);
+  opacity: 0.8;
+  color: #fff;
+}
+
+.modal-btn:active {
+  background: var(--primary-color);
+  opacity: 1;
+  color: #fff;
+}
+
+.modal-btn:hover img,
+.modal-btn:active img {
+  filter: invert(1);
+}
+
+.prev-next {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  body.modal-active {
+    height: 220vh;
+  }
+
   .navbar {
     height: 12vh;
     background-image: none;
@@ -820,6 +988,18 @@ textarea:focus {
     padding: 2% 4%;
   }
 
+  .modal-box .lg-lists {
+    margin: 3% 0;
+  }
+
+  .modal-box .lg-lists li {
+    padding: 0.7vw 1.3vw;
+  }
+
+  .lg-lists li:nth-of-type(2) {
+    margin: 0 2%;
+  }
+
   .project1 ul li:nth-of-type(2) {
     line-height: 1.2;
     margin: 0 4%;
@@ -857,10 +1037,6 @@ textarea:focus {
 
   .pjbtn i {
     font-size: 30px;
-  }
-
-  .pjbtn:hover a {
-    color: #fff;
   }
 
   .project2 .pjcontent,
@@ -992,6 +1168,81 @@ textarea:focus {
 
   .f-links:hover img {
     width: 110%;
+  }
+
+  .modal {
+    width: 100%;
+    background: rgba(26, 34, 54, 0.95);
+  }
+
+  .modal-box {
+    width: 90%;
+    margin: 4.2vw;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-btn {
+    font-size: 2.5rem;
+    right: 73px;
+    top: 73px;
+  }
+
+  .modal-box .pjname {
+    margin: 0;
+  }
+
+  .main-img {
+    height: 78vh;
+  }
+
+  .img-lists {
+    height: 20vh;
+  }
+
+  .pj-info {
+    width: 45vw;
+    align-self: center;
+    margin-top: 7%;
+  }
+
+  .modal-btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .modal-btn:last-child {
+    margin: 5%;
+  }
+
+  .prev-next {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .prev-next a {
+    width: 13vw;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .prev-next .next-btn {
+    width: 10vw;
+  }
+
+  .pjbtn:hover a {
+    color: #fff;
   }
 }
 

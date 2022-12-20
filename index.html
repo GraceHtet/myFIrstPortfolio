@@ -9,6 +9,7 @@
     <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    
     <!-- Start NAVBAR SECTION-->
     <header>
       <nav>
@@ -65,9 +66,8 @@
             <li>Javascript</li>
           </ul>
           <button type="button" class="pjbtn">
-            <a href="#" class="flex"
-              ><span>See this Project</span
-              ><i class="fa-solid fa-arrow-right"></i>
+            <a href="#" class="flex"><span>See this Project</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -87,9 +87,8 @@
             <li>Javascript</li>
           </ul>
           <button type="button" class="pjbtn">
-            <a href="#" class="flex"
-              ><span>See this Project</span
-              ><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="flex"><span>See this Project</span>
+              <i class="fa-solid fa-arrow-right"></i></a>
           </button>
         </div>
       </div>
@@ -108,9 +107,8 @@
             <li>Javascript</li>
           </ul>
           <button type="button" class="pjbtn">
-            <a href="#" class="flex"
-              ><span>See this Project</span
-              ><i class="fa-solid fa-arrow-right"></i>
+            <a href="#" class="flex"><span>See this Project</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -131,9 +129,8 @@
             <li>Javascript</li>
           </ul>
           <button type="button" class="pjbtn">
-            <a href="#" class="flex"
-              ><span>See this Project</span
-              ><i class="fa-solid fa-arrow-right"></i>
+            <a href="#" class="flex"><span>See this Project</span>
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </button>
         </div>
@@ -153,9 +150,8 @@
               <li>Javascript</li>
             </ul>
             <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="fa-solid fa-arrow-right"></i>
+              <a href="#" class="flex"><span>See this Project</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </button>
           </div>
@@ -174,9 +170,8 @@
               <li><span>Javascript</span><span>+1</span></li>
             </ul>
             <button type="button" class="pjbtn">
-              <a href="#" class="flex"
-                ><span>See this Project</span
-                ><i class="fa-solid fa-arrow-right"></i>
+              <a href="#" class="flex"><span>See this Project</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </button>
           </div>
@@ -261,7 +256,7 @@
               <label for="name">Your name</label>
             </div>
             <div class="form-input">
-              <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+              <input type="email" name="email" id="email" placeholder="Enter your email"  required/>
               <label for="email">Your email</label>
             </div>
           </div>
@@ -278,17 +273,58 @@
         /></a>
     <div class="my_links">
       <ul>
-        <li><a href="https://stackoverflow.com/users/20728647/grace" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_stackoverflow.svg" alt="stackoverflow"/></a></li>
-        <li><a href="https://github.com/GraceHtet" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_github.svg" alt="github"/></a></li>
-        <li><a href="https://twitter.com/Grace_Htet4?s=09" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_twitter.svg" alt="twitter"/></a></li>
-        <li><a href="https://www.linkedin.com/in/thiri-htet-418047204/" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_linkedin.svg" alt="linkedin"/></a></li>
-        <li><a href="https://medium.com/" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_medium.svg" alt="medium"/></a></li>
-        <li><a href="https://angel.co/" class="f-links" target="_blank" rel="noopener noreferrer"><img src="./img/ic_angellist.svg" alt="angelist"/></a></li>
+        <li><a href="https://stackoverflow.com/users/20728647/grace" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_stackoverflow.svg" alt="stackoverflow"/></a></li>
+        <li><a href="https://github.com/GraceHtet" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_github.svg" alt="github"/></a></li>
+        <li><a href="https://twitter.com/Grace_Htet4?s=09" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_twitter.svg" alt="twitter"/></a></li>
+        <li><a href="https://www.linkedin.com/in/thiri-htet-418047204/" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_linkedin.svg" alt="linkedin"/></a></li>
+        <li><a href="https://medium.com/" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_medium.svg" alt="medium"/></a></li>
+        <li><a href="https://angel.co/" class="f-links" target="_self" rel="noopener noreferrer"><img src="./img/ic_angellist.svg" alt="angelist"/></a></li>
       </ul>
     </div>
     </footer>
 
     <!-- End CONTACT ME SECTION -->
+
+    <!-- change modal box -->
+    <!-- Start Modal Box -->
+    <section id="modal" class="modal">
+      <div class="modal-box">
+        <button type="button" class="close-btn"><i class="fa-solid fa-x"></i></button>
+        <h3 class="pjname"></h3>
+        <ul class="lg-lists flex">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <div class="img-group">
+          <div class="main-img">
+            <i class="fa-solid fa-chevron-left left"></i>
+            <i class="fa-solid fa-chevron-right right"></i>
+          </div>
+          <ul class="flex img-lists">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="pj-info">
+          <p class="modal-content"></p>
+          <div class="modal-btn-group">
+            <a href="#" id="liveLink" class="modal-btn"><span>See live</span><img src="./img/ic_link.svg" alt="live-link"/></a>
+            <a href="#" id="sourceLink" class="modal-btn"><span>See source</span><img src="./img/ic_github_white.svg" alt=""/></a>
+          </div>
+          
+          <div class="prev-next">
+            <a href="#" class="prev-btn"><i class="fa-solid fa-arrow-left"></i><span>Previous project</span></a>
+            <a href="#" class="next-btn"><span>Next project</span><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Modal Box -->
   
   <script src="./app.js" type="text/javascript"></script> 
   </body>
