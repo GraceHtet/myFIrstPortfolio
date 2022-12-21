@@ -598,6 +598,19 @@ textarea:focus {
   animation: none;
 }
 
+.message {
+  width: 100%;
+  background-color: #fff;
+  color: rgb(205, 0, 0);
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 12px;
+  border: 1px solid rgb(205, 0, 0);
+  border-radius: 4px;
+  padding: 2%;
+  display: none;
+}
+
 .mainFooter {
   width: 100%;
   background: var(--primary-color);
