@@ -128,7 +128,8 @@ body.nav-active {
   width: 100%;
   height: 100vh;
   background: #fff;
-  background-image: url("./img/image_geometry_menu_1.svg"),
+  background-image:
+    url("./img/image_geometry_menu_1.svg"),
     url("./img/image_geometry_menu_2.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -900,7 +901,8 @@ textarea:focus {
   }
 
   .work-bgs3 {
-    background-image: url("./img/image-geometry_4.svg"),
+    background-image:
+      url("./img/image-geometry_4.svg"),
       url("./img/image-geometry_5.svg");
     background-repeat: no-repeat;
     background-position: top right, top left;
@@ -1093,7 +1095,8 @@ textarea:focus {
   }
 
   .contactMe {
-    background-image: url("./img/main_contactbg1.svg"),
+    background-image:
+      url("./img/main_contactbg1.svg"),
       url("./img/main_contactbg2.svg");
     background-position: left top, right bottom;
     justify-content: center;
