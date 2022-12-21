@@ -128,8 +128,7 @@ body.nav-active {
   width: 100%;
   height: 100vh;
   background: #fff;
-  background-image:
-    url("./img/image_geometry_menu_1.svg"),
+  background-image: url("./img/image_geometry_menu_1.svg"),
     url("./img/image_geometry_menu_2.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -598,6 +597,19 @@ textarea:focus {
   animation: none;
 }
 
+.message {
+  width: 100%;
+  background-color: #fff;
+  color: rgb(205, 0, 0);
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 12px;
+  border: 1px solid rgb(205, 0, 0);
+  border-radius: 4px;
+  padding: 2%;
+  display: none;
+}
+
 .mainFooter {
   width: 100%;
   background: var(--primary-color);
@@ -888,8 +900,7 @@ textarea:focus {
   }
 
   .work-bgs3 {
-    background-image:
-      url("./img/image-geometry_4.svg"),
+    background-image: url("./img/image-geometry_4.svg"),
       url("./img/image-geometry_5.svg");
     background-repeat: no-repeat;
     background-position: top right, top left;
@@ -1082,8 +1093,7 @@ textarea:focus {
   }
 
   .contactMe {
-    background-image:
-      url("./img/main_contactbg1.svg"),
+    background-image: url("./img/main_contactbg1.svg"),
       url("./img/main_contactbg2.svg");
     background-position: left top, right bottom;
     justify-content: center;
