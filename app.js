@@ -122,3 +122,36 @@ for (let i = 0; i < projectCards.length; i += 1) {
   });
 }
 // End Modal Box
+
+// Start form validation
+const getForm = document.querySelector('form');
+const getEmail = document.querySelector('input[type="email"]');
+const getMessage = document.querySelector('form .message');
+
+function showError(msg) {
+  getMessage.style.display = 'block';
+  getMessage.innerText = msg;
+}
+
+function showSuccess(msg) {
+  getMessage.style.display = 'block';
+  getMessage.style.color = 'green';
+  getMessage.style.borderColor = 'green';
+  getMessage.innerText = msg;
+}
+
+function checkLowerCase(input) {
+  if (input.value !== input.value.toLowerCase()) {
+    showError(`${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`);
+  } else {
+    showSuccess('Thank You. We\'ll consider it.');
+    getForm.submit();
+  }
+}
+
+getForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  checkLowerCase(getEmail);
+});
+
+// End form validation
