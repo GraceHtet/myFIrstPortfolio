@@ -18,73 +18,62 @@ getNavItems.forEach((navitem) => {
 });
 
 // Start Modal Box
-const projectDetails = [{
-  name: 'Project 1',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj1.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}, {
-  name: 'Project 2',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj2.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}, {
-  name: 'Project 3',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj3.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}, {
-  name: 'Project 4',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj4.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}, {
-  name: 'Project 5',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj5.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}, {
-  name: 'Project 6',
-  detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  image: './img/pj6.svg',
-  technologies: [
-    'HTML/CSS',
-    'Ruby on Rails',
-    'JavaScript',
-  ],
-  live: 'https://gracehtet.github.io/myFIrstPortfolio/',
-  source: 'https://github.com/GraceHtet',
-}];
+const projectDetails = [
+  {
+    name: 'Project 1',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj1.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+  {
+    name: 'Project 2',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj2.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+  {
+    name: 'Project 3',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj3.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+  {
+    name: 'Project 4',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj4.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+  {
+    name: 'Project 5',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj5.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+  {
+    name: 'Project 6',
+    detail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br/><br/>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    image: './img/pj6.svg',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live: 'https://gracehtet.github.io/myFIrstPortfolio/',
+    source: 'https://github.com/GraceHtet',
+  },
+];
 
 const projectCards = document.querySelectorAll('.project-cards');
 const getModal = document.querySelector('#modal');
@@ -154,14 +143,24 @@ function addData(name, email, text) {
   return { name, email, text };
 }
 
+function showData({ name, email, text }) {
+  getName.value = name;
+  getEmail.value = email;
+  getText.value = text;
+}
+
+inputDatas.forEach(showData);
+
 // End Local Storage
 
 function checkLowerCase(input) {
   if (input.value !== input.value.toLowerCase()) {
-    showError(`${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`);
+    showError(
+      `${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`
+    );
   } else {
     addData(getName.value, getEmail.value, getText.value);
-    showSuccess('Thank You. We\'ll consider it.');
+    showSuccess("Thank You. We'll consider it.");
     getForm.submit();
   }
 }
