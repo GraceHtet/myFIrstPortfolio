@@ -775,8 +775,10 @@ textarea:focus {
 
   .navbar {
     height: 12vh;
+    background: #fff;
     background-image: none;
     box-shadow: 0 0.5px 0 #dddfe6;
+    z-index: 2;
   }
 
   .nav-menu {

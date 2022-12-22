@@ -2,6 +2,8 @@ const getBody = document.body;
 const getNavBar = document.getElementById('navBar');
 const getNavBtn = document.getElementById('navBtn');
 const getNavItems = document.querySelectorAll('.nav-menu .nav-items');
+const getName = document.querySelector('input#name');
+const getText = document.querySelector('textarea');
 
 getNavBtn.addEventListener('click', () => {
   getNavBar.classList.toggle('active');
@@ -140,10 +142,25 @@ function showSuccess(msg) {
   getMessage.innerText = msg;
 }
 
+// End form validation
+
+// Start Local Storage
+
+const inputDatas = JSON.parse(localStorage.getItem('inputDatas')) || [];
+
+function addData(name, email, text) {
+  inputDatas.push({ name, email, text });
+  localStorage.setItem('inputDatas', JSON.stringify(inputDatas));
+  return { name, email, text };
+}
+
+// End Local Storage
+
 function checkLowerCase(input) {
   if (input.value !== input.value.toLowerCase()) {
     showError(`${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`);
   } else {
+    addData(getName.value, getEmail.value, getText.value);
     showSuccess('Thank You. We\'ll consider it.');
     getForm.submit();
   }
@@ -153,5 +170,3 @@ getForm.addEventListener('submit', (e) => {
   e.preventDefault();
   checkLowerCase(getEmail);
 });
-
-// End form validation
