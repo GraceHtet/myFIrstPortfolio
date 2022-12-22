@@ -157,11 +157,15 @@ function checkLowerCase(input) {
   if (input.value !== input.value.toLowerCase()) {
     showError(`${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`);
   } else {
-    addData(getName.value, getEmail.value, getText.value);
     showSuccess("Thank You. We'll consider it.");
     getForm.submit();
   }
 }
+
+getForm.addEventListener('change', (e) => {
+  e.preventDefault();
+  addData(getName.value, getEmail.value, getText.value);
+});
 
 getForm.addEventListener('submit', (e) => {
   e.preventDefault();
