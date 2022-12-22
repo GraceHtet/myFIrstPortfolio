@@ -155,9 +155,7 @@ inputDatas.forEach(showData);
 
 function checkLowerCase(input) {
   if (input.value !== input.value.toLowerCase()) {
-    showError(
-      `${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`,
-    );
+    showError(`${input.type.toUpperCase()} should be in lowercase. Please resubmit again.`);
   } else {
     addData(getName.value, getEmail.value, getText.value);
     showSuccess("Thank You. We'll consider it.");
